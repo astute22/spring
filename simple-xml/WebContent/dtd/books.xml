@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookList SYSTEM "book.dtd" >
+<bookList>
+	<book>
+		<title>요고이 자바다잉</title>
+		<author>신용궈</author>
+		<author>김기동</author>
+		<author>조선꾸레</author>
+		<publisher>조선까탈루냐</publisher>
+		<price>100</price>
+	</book>
+</bookList>

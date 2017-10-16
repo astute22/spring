@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.0.201707061730-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[true]]></enableImports>
+	<configs>
+		<config>src/main/resources/META-INF/spring/demo1-annotation-context.xml</config>
+		<config>src/main/resources/META-INF/spring/demo1-manual-context.xml</config>
+		<config>src/main/resources/META-INF/spring/demo1-annotation-scan-context.xml</config>
+		<config>src/main/resources/META-INF/spring/demo2-required-context.xml</config>
+		<config>src/main/resources/META-INF/spring/demo2-resource-context.xml</config>
+		<config>src/main/resources/META-INF/spring/demo3-value-context.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+		<configSet>
+			<name><![CDATA[test]]></name>
+			<allowBeanDefinitionOverriding>true</allowBeanDefinitionOverriding>
+			<incomplete>false</incomplete>
+			<configs>
+			</configs>
+			<profiles>
+			</profiles>
+		</configSet>
+	</configSets>
+</beansProjectDescription>

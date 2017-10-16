@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE products SYSTEM "product.dtd" >
+<products>
+	<product serial="ph0001" category="맛폰">
+		<name>갠역시</name>
+		<maker>칠성</maker>
+		<price unit="파운드">
+			<original>1000</original>
+			<discount>900</discount>
+		</price>
+	</product>
+	<product serial="ph0002" category="맛폰">
+		<name>사과폰</name>
+		<maker>사과</maker>
+		<price unit="달러">
+			<original>1060</original>
+			<discount>980</discount>
+		</price>
+	</product>
+</products>

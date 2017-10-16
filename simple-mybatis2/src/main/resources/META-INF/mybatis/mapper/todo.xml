@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sample.demo.todo.mappers.TodoMapper">
+	<select id="getAllTodo" resultType="Todo">
+		select
+			TODO_NO			no,
+			TODO_TITLE		title,
+			TODO_DATES		dates,
+			TODO_CONTENTS	contents
+		from 
+			TB_TODO
+		order by
+			TODO_NO asc
+	</select>
+	<insert id="addTodo" parameterType="Todo">
+		insert into TB_TODO (TODO_NO, TODO_TITLE, TODO_DATES, TODO_CONTENTS, TODO_COMPLETED, TODO_DELETED)
+		values (todo_seq.nextval, #{title}, sysdate, #{contents}, '아니오', 'N')
+	</insert>
+	
+	<delete id="delTodo" parameterType="int">
+		delete from TB_TODO
+		where TODO_NO = #{value}
+	</delete>
+</mapper>
